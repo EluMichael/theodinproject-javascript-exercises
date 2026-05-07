@@ -1,5 +1,5 @@
 const repeatString = function(string, num) {
-  if (num > 0){
+  if (num >= 0){
    let stringConcatenate = "";
    for (let i=0; i<num; i++){
     stringConcatenate += string;
