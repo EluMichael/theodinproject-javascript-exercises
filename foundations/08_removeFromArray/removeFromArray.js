@@ -1,5 +1,5 @@
 const removeFromArray = function(varArray, ...num) {
-    for (const i=0, len=num.length; i<len; i++) {
+    for (let i=0, len=num.length; i<len; i++) {
         varArray = varArray.filter(x => x !== num[i]);
     }
     return varArray;
