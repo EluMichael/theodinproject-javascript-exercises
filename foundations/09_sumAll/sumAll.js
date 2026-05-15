@@ -3,6 +3,11 @@ const sumAll = function(xRangeInt, yRangeInt) {
         nextInt,
         totalElement;
     
+    // validate parameter and return 'ERROR'
+    if ( typeof(xRangeInt)!== 'number' && typeof(yRangeInt)!== 'number' && xRangeInt < 0 && yRangeInt< 0 ) {
+        return 'ERROR'
+    }
+
     // collect any positive number and set parameter in order
     if (xRangeInt < yRangeInt) {
         startRangeInt = xRangeInt;
