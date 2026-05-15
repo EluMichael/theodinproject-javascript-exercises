@@ -4,8 +4,8 @@ const sumAll = function(xRangeInt, yRangeInt) {
         totalElement;
     
     // validate parameter and return 'ERROR'
-    if ( typeof(xRangeInt)!== 'number' && typeof(yRangeInt)!== 'number' && xRangeInt < 0 && yRangeInt< 0 ) {
-        return 'ERROR'
+    if ( typeof(xRangeInt)!== 'number' || typeof(yRangeInt)!== 'number' || xRangeInt < 0 || yRangeInt< 0 ) {
+        return 'ERROR';
     }
 
     // collect any positive number and set parameter in order
