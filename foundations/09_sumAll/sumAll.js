@@ -1,8 +1,21 @@
-const sumAll = function(startRangeInt, endRangeInt) {
-    let total = 0, 
-        nextInt =startRangeInt,
+const sumAll = function(xRangeInt, yRangeInt) {
+    let total = 0, startRangeInt, endRangeInt,
+        nextInt,
         totalElement;
+    
+    // collect any positive number and set parameter in order
+    if (xRangeInt < yRangeInt) {
+        startRangeInt = xRangeInt;
+        endRangeInt = yRangeInt;
+    }
+    else {
+        startRangeInt = yRangeInt;
+        endRangeInt = xRangeInt;
+    }        
 
+    nextInt = startRangeInt;
+
+    // cater for Natural integer
     if (startRangeInt > 0){
         totalElement = endRangeInt - startRangeInt + 1;
     }
