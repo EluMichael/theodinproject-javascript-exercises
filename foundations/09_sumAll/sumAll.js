@@ -4,9 +4,9 @@ const sumAll = function(xRangeInt, yRangeInt) {
         totalElement;
     
     // validate parameter and return 'ERROR'
-    if ( typeof(xRangeInt)!== 'number' || typeof(yRangeInt)!== 'number' || xRangeInt < 0 || yRangeInt< 0 ) {
+    if ( !Number.isSafeInteger(xRangeInt) || !Number.isSafeInteger(yRangeInt) || typeof(xRangeInt)!== 'number' || typeof(yRangeInt)!== 'number' || xRangeInt < 0 || yRangeInt< 0 ) {
         return 'ERROR';
-    }
+    } // xRangeInt % 1 === 0 to test whole number
 
     // collect any positive number and set parameter in order
     if (xRangeInt < yRangeInt) {
