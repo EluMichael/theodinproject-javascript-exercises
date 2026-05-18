@@ -1,6 +1,6 @@
 const leapYears = function(varYear) {
     if (varYear % 100 == 0){ //start checking from number divisible by 100
-        if (varYear % 4 == 0) {
+        if (varYear % 400 == 0) {
             return true
         }
         else {
