@@ -23,8 +23,8 @@ const power = function(base, exponent) {
 };
 
 const factorial = function(number) {
-	let factorialResult = 1;
-  for (i=0; i <= number; i++) {
+	let factorialResult = 1; // takes care of 0!
+  for (i=1; i <= number; i++) { // only natural number
     factorialResult *= i;
   }
   return factorialResult;
