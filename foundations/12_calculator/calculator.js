@@ -6,15 +6,15 @@ const subtract = function(firstValue, secondValue) {
 	return firstValue - secondValue;
 };
 
-const sum = function(...numbers) {
+const sum = function(numberArray) {
 	let total = 0;
-  numbers.forEach(aValue => total += aValue);
+  numberArray.forEach(aValue => total += aValue);
   return total;
 };
 
-const multiply = function(...numbers) {
+const multiply = function(numberArray) {
   let total = 1;
-  numbers.forEach(v => total *= v);
+  numberArray.forEach(v => total *= v);
   return total;
 };
 
