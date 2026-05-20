@@ -1,7 +1,7 @@
 const fibonacci = function(nthMember) {
   let fibonacciSequence = [1, 1];
 
-  if (+nthMember <= 2 && +number != 0) { //convert excepted string integer to number
+  if (+nthMember <= 2 && +nthMember != 0) { //convert excepted string integer to number
     return 1;
   } else if (+nthMember == 0) {
     return 0;
